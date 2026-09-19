@@ -4,3 +4,8 @@
 /* Compact arcade layout */
 .intro{padding:28px 0;gap:20px}.intro h1{font-size:28px;margin:0;letter-spacing:-1px}.scorebox{min-width:0;flex-direction:row;align-items:center;gap:18px;padding:12px 18px;background:none;border:0}.scorebox strong{font-size:32px;letter-spacing:3px;margin:0}.scorebox>span:last-child{margin:0}.scorebox .eyebrow{font-size:11px}.arcade-section{margin-top:28px;padding-top:24px}.rack-footer{justify-content:flex-end}.play-card h3{font-size:23px}.play-card>p:empty{display:none}.ball-count{margin-top:20px}.lane-tip{font-size:10px;letter-spacing:1.4px;pointer-events:none}canvas{touch-action:none;cursor:grab}canvas.dragging{cursor:grabbing}.game-area{height:550px}.empty-rack{min-height:110px}footer{margin-top:30px}.intro .scorebox strong{position:static}.intro .scorebox{min-height:0;margin:0}
 @media(max-width:600px){.intro{display:flex;flex-wrap:wrap;padding:22px 0}.intro h1{font-size:24px}.scorebox{padding:0;gap:10px}.scorebox strong{font-size:28px}.scorebox>span:last-child{font-size:11px}.game-area{height:470px}.lane-tip{font-size:9px;letter-spacing:.5px}.arcade-section h2{font-size:20px}}
+
+/* Longer run-up with gesture-only throws. */
+.game-area{height:900px;max-height:none}.lane-tip{bottom:12px;color:#a99aaf;font-size:11px;letter-spacing:1px}.cabinet{align-self:start}canvas{touch-action:none}
+@media(max-width:850px){.arcade-layout{grid-template-columns:minmax(0,1fr) 230px}.game-area{height:760px}}
+@media(max-width:600px){.arcade-layout{grid-template-columns:1fr}.game-area{height:640px}.lane-tip{font-size:10px;letter-spacing:.5px}}
