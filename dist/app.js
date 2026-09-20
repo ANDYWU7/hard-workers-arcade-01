@@ -119,3 +119,5 @@ const helpButton=$('#help');
 if(helpButton){const staticHelp=document.createElement('span');staticHelp.className='icon-button static-icon';staticHelp.setAttribute('aria-hidden','true');staticHelp.textContent='?';helpButton.replaceWith(staticHelp);}
 const testLogo=$('#test-logo');
 if(testLogo){testLogo.removeAttribute('role');testLogo.removeAttribute('tabindex');testLogo.style.userSelect='none';testLogo.style.webkitUserSelect='none';}
+const staticHelp=document.querySelector('.static-icon');
+if(staticHelp){const helpButton=document.createElement('button');helpButton.id='help';helpButton.className='icon-button';helpButton.type='button';helpButton.setAttribute('aria-label','How to play');helpButton.title='How to play';helpButton.textContent='?';helpButton.onclick=()=>$('#help-dialog').showModal();staticHelp.replaceWith(helpButton);}
